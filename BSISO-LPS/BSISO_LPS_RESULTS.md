@@ -89,7 +89,7 @@ Phase derived from PC1 and PC2 reproduces the reference phase-day counts exactly
 One index day (2015-06-21) is missing and is filled by interpolation. On average the phase advances
 1 -> 8: +66 degrees over 10 days (amp >= 1), but with a wide spread (R = 0.32).
 
-![phase reproduction](fig04_phase_reproduction.png)
+![phase reproduction](figures/fig04_phase_reproduction.png)
 
 ### 4.2 Phase and storm genesis
 Storms born per 100 BSISO days in each phase, with the 90% chance range:
@@ -120,7 +120,7 @@ common phase; the "per 100 days" column removes that.
 1981-2019): peak at phase 4.8-4.9, omnibus p = 0.0015. In the years 1981-1999 only (never used in this
 notebook) it is also present: all days p = 0.019, amp >= 1 p = 0.041, peak at 4.8-4.9.
 
-![genesis and strength by phase](fig01_genesis_and_strength_by_phase.png)
+![genesis and strength by phase](figures/fig01_genesis_and_strength_by_phase.png)
 
 ### 4.3 Phase and storm strength
 Strength anomaly (% relative to the all-phase mean) by phase:
@@ -139,7 +139,7 @@ Strength anomaly (% relative to the all-phase mean) by phase:
 p < 0.003 for all days (none of 300 shuffles matched) and p < 0.001 for amp >= 1 (none of 1,000); 6 of 8 phases lie outside their chance range in both. Storms are
 **weaker** in phases 1-3 and **stronger** in phases 5-7. Restricting to amp >= 1 sharpens the contrast.
 
-![gated genesis and strength](fig08_gated_genesis_and_strength.png)
+![gated genesis and strength](figures/fig08_gated_genesis_and_strength.png)
 
 ### 4.4 Amplitude
 | statistic | all days | amp >= 1 |
@@ -160,7 +160,7 @@ p < 0.003 for all days (none of 300 shuffles matched) and p < 0.001 for amp >= 1
   when the gate is applied. The all-days result is about 6 standard deviations from its null, the
   amp >= 1 result about 4.
 
-![amplitude and storms](fig02_amplitude_and_storms.png)
+![amplitude and storms](figures/fig02_amplitude_and_storms.png)
 
 ### 4.5 Rain around storm centres (IMERG)
 "Extreme" means at or above a grid cell's own 95th or 99th percentile of JJAS daily rain (median
@@ -188,8 +188,8 @@ come from reanalysis and the rain from a satellite estimate, so it is not a shar
 null still contains the average influence of storms at those places, so the true enrichment is probably
 slightly larger.
 
-![rain versus distance](fig05_rain_vs_distance_from_storm_centre.png)
-![share of extreme rain near storms](fig07_extreme_rain_share_near_storms.png)
+![rain versus distance](figures/fig05_rain_vs_distance_from_storm_centre.png)
+![share of extreme rain near storms](figures/fig07_extreme_rain_share_near_storms.png)
 
 ### 4.6 Restricting to BSISO-active days (amp >= 1)
 The BSISO is only defined as active when amplitude >= 1, so the phase is meaningless below that.
@@ -207,7 +207,7 @@ It is the correct definition for describing phase behaviour, but not a way to ge
 Storms born on inactive days (122 of 345) are a real part of the picture: the amplitude result above
 says genesis does not depend on amplitude.
 
-![gated amplitude](fig09_gated_amplitude.png)
+![gated amplitude](figures/fig09_gated_amplitude.png)
 
 ### 4.7 BSISO events: one track per event
 An **event** starts when amplitude reaches 1 and ends when it drops below 1. The number of events
@@ -233,7 +233,7 @@ depends heavily on how long a dip below 1 is tolerated inside one event:
   advance 1 -> 8 on average (median +130 deg). So longer events do follow the phase order, but none
   completes a full cycle.
 
-![BSISO events](fig11_bsiso_events.png)
+![BSISO events](figures/fig11_bsiso_events.png)
 
 ### 4.8 Where storms form, by BSISO phase
 Storms born on BSISO-active days, placed in the phase of their birth day:
@@ -253,7 +253,7 @@ Storms born on BSISO-active days, placed in the phase of their birth day:
 In phases 4-8 most storms form over the northern Bay of Bengal and eastern India and track
 west-north-west across central India (read from the maps, not tested).
 
-![storm maps by phase](fig12_storm_maps_by_phase.png)
+![storm maps by phase](figures/fig12_storm_maps_by_phase.png)
 
 ### 4.9 How often the BSISO sits in each phase (amp >= 1)
 
