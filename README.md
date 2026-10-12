@@ -31,6 +31,8 @@ they form, and the heaviest rain sits close to the storm centres.
 ## What's here
 
 - `BSISO-LPS/` has the notebook, a write-up explaining the numbers and results, and the figures.
+- `BSISO-Active/` links the BSISO to active and break spells, and tests how far ahead a spell can be
+  predicted. Same layout: notebook, write-up and figures.
 
 The data isn't stored in the repo. It comes from the APCC BSISO index, an LPS track catalogue and IMERG
 rainfall.
