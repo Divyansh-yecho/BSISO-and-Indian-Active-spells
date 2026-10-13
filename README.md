@@ -33,6 +33,8 @@ they form, and the heaviest rain sits close to the storm centres.
 - `BSISO-LPS/` has the notebook, a write-up explaining the numbers and results, and the figures.
 - `BSISO-Active/` links the BSISO to active and break spells, and tests how far ahead a spell can be
   predicted. Same layout: notebook, write-up and figures.
+- `BSISO-Rain/` repeats the plots of Dey et al. (2022) for the BSISO and our spells, and looks at how the
+  BSISO moves extreme rain around India. Same layout.
 
 The data isn't stored in the repo. It comes from the APCC BSISO index, an LPS track catalogue and IMERG
 rainfall.
