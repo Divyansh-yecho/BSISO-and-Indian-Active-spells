@@ -35,6 +35,9 @@ they form, and the heaviest rain sits close to the storm centres.
   predicted. Same layout: notebook, write-up and figures.
 - `BSISO-Rain/` repeats the plots of Dey et al. (2022) for the BSISO and our spells, and looks at how the
   BSISO moves extreme rain around India. Same layout.
+- `BSISO-ERE-Link/` links the BSISO to large extreme-rain events (16+ cells) and their tracks, and sets the
+  forecast target for Part 2: the daily chance of no ERE or a small, medium or large ERE over central India.
+  Same layout.
 
 The data isn't stored in the repo. It comes from the APCC BSISO index, an LPS track catalogue and IMERG
 rainfall.
