@@ -23,7 +23,8 @@ So the plan has two parts:
 ## Where it stands
 
 Still work in progress. Part 1 is mostly done: the BSISO-to-LPS and LPS-to-rain parts are in this repo.
-Part 2, the forecasting, hasn't been started yet.
+Part 2, the forecasting, has started: a first forecast of large extreme-rain days over central India from the
+BSISO alone is in `BSISO-daily-ERE-Prediction/`. Adding observed rain and weather maps comes next.
 
 So far, the BSISO phase clearly changes how strong the storms are and has a smaller effect on how often
 they form, and the heaviest rain sits close to the storm centres.
@@ -38,6 +39,9 @@ they form, and the heaviest rain sits close to the storm centres.
 - `BSISO-ERE-Link/` links the BSISO to large extreme-rain events (16+ cells) and their tracks, and sets the
   forecast target for Part 2: the daily chance of no ERE or a small, medium or large ERE over central India.
   Same layout.
+- `BSISO-daily-ERE-Prediction/` forecasts that target 1-14 days ahead from the BSISO alone: a small
+  transformer forecasts the BSISO, and a regression turns it into daily and weekly ERE chances. It also lists
+  every model variant tested and what mattered. Same layout.
 
 The data isn't stored in the repo. It comes from the APCC BSISO index, an LPS track catalogue and IMERG
 rainfall.
