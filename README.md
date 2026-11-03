@@ -24,7 +24,9 @@ So the plan has two parts:
 
 Still work in progress. Part 1 is mostly done: the BSISO-to-LPS and LPS-to-rain parts are in this repo.
 Part 2, the forecasting, has started: a first forecast of large extreme-rain days over central India from the
-BSISO alone is in `BSISO-daily-ERE-Prediction/`. Adding observed rain and weather maps comes next.
+BSISO alone is in `BSISO-daily-ERE-Prediction/`, and adding the observed monsoon rain band on the forecast day
+is in `BSISO_ERE_PREDICTION_RAIN-BANDS/`. The rain band helps a lot in the first week; beyond a week the skill
+still comes only from the BSISO forecast. Weather maps (moisture, winds, sea temperature) come next.
 
 So far, the BSISO phase clearly changes how strong the storms are and has a smaller effect on how often
 they form, and the heaviest rain sits close to the storm centres.
@@ -42,6 +44,9 @@ they form, and the heaviest rain sits close to the storm centres.
 - `BSISO-daily-ERE-Prediction/` forecasts that target 1-14 days ahead from the BSISO alone: a small
   transformer forecasts the BSISO, and a regression turns it into daily and weekly ERE chances. It also lists
   every model variant tested and what mattered. Same layout.
+- `BSISO_ERE_PREDICTION_RAIN-BANDS/` adds the monsoon rain band seen on the forecast day, and compares the best
+  model with ridge, lasso, the BSISO-only model and the normal seasonal chance on the same days. It also has the
+  code and result tables.
 
 The data isn't stored in the repo. It comes from the APCC BSISO index, an LPS track catalogue and IMERG
 rainfall.
